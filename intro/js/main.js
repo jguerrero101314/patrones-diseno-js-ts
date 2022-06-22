@@ -46,3 +46,22 @@ operation(
   1,
   2
 );
+
+//Array, mutabilidad e inmutabilidad
+const names = ['Joel', 'Juan', 'Jose', 'Ana'];
+names.forEach((name) => console.log(name)); // inmutable
+names.forEach((name) => console.log(name.toUpperCase())); // inmutable
+console.log('names: ', names);
+
+names.sort(); // Mutable
+console.log('names: ', names);
+
+// map imprime un objeto nuevo
+const namesUpper = names.map((name) => name.toUpperCase());
+console.log('namesUpper MAP: ', namesUpper);
+console.log('names Original: ', names);
+
+// reduce retorna acumulados
+const numbers = [5, 4, 7, 1, 10];
+const total = numbers.reduce((ac, number) => ac + number, 10);
+console.log('total: ', total);
