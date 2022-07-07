@@ -69,3 +69,4 @@ const weekDays2 = new WeekDays();
 
 console.log('weekDays: ', weekDays.getDays());
 console.log('weekDays2: ', weekDays2.getDays());
+console.log('***************************************************');
