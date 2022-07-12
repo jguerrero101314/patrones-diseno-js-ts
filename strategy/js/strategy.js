@@ -144,7 +144,9 @@ const strategies = [
   new DetailLisStrategy(),
   new ListWithImageStrategy(),
 ];
+
 const info = new InfoContext(new LisStrategy(), data, content);
+
 info.show();
 slcOptions.addEventListener('change', (event) => {
   const op = event.target.value;
